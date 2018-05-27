@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h2>Interested in getting a quote for your next project? Need to schedule our lawncare experts to maintain your beauty? Just have some questions?</h2>
+	<h3>Fill out the form below and we'll be happy to have someone get in contact with you.</h3>
+
+	<form role="form" action="" method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit">Submit</button>
+	</form>
+{% endblock %}
